@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: educaweb_db
+    environment:
+      POSTGRES_USER: educaweb
+      POSTGRES_PASSWORD: educawebpassword
+      POSTGRES_DB: educaweb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: educaweb_backend
+    environment:
+      - DATABASE_URL=postgresql://educaweb:educawebpassword@db:5432/educaweb
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
