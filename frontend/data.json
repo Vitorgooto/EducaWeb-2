@@ -1,0 +1,49 @@
+{
+    "users": [
+      {
+        "username": "user1",
+        "password": "password1"
+      },
+      {
+        "username": "user2",
+        "password": "password2"
+      }
+    ],
+    "articles": [
+      {
+        "title": "How to learn JavaScript",
+        "content": "JavaScript is a versatile language used for web development...",
+        "tags": ["JavaScript", "Web Development"]
+      },
+      {
+        "title": "Understanding CSS",
+        "content": "CSS is used to style and layout web pages...",
+        "tags": ["CSS", "Web Design"]
+      }
+    ],
+    "categories": [
+      {
+        "name": "Web Development",
+        "parent_id": null
+      },
+      {
+        "name": "Programming Languages",
+        "parent_id": null
+      }
+    ],
+    "tags": [
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "Web Development"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "Web Design"
+      }
+    ]
+  }
+  

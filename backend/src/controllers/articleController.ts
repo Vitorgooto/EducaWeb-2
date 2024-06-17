@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { createArticle, getAllArticles } from '../models/articleModel';
+import { createArticle, getAllArticles, getQuestionsAndAnswers } from '../models/articleModel';
 
 export const submitArticle = async (req: Request, res: Response) => {
   const { title, content } = req.body;
@@ -14,4 +14,9 @@ export const submitArticle = async (req: Request, res: Response) => {
 export const fetchAllArticles = async (req: Request, res: Response) => {
   const articles = await getAllArticles();
   res.json(articles);
+};
+
+export const fetchQuestionsAndAnswers = async (req: Request, res: Response) => {
+  const questionsAndAnswers = await getQuestionsAndAnswers();
+  res.json(questionsAndAnswers);
 };

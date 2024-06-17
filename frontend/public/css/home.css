@@ -1,0 +1,22 @@
+#home {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #qa-section > div {
+    margin-bottom: 1em;
+  }
+  
+  #qa-section h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  #qa-section p {
+    margin: 0.5em 0 0;
+    color: #666;
+  }
+  

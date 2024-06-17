@@ -1,0 +1,47 @@
+#main-content {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  #search-bar {
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #filter {
+    width: 25%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #article-list > div {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+  }
+  
+  #article-list > div:last-child {
+    border-bottom: none;
+  }
+  
+  #article-list h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  #article-list p {
+    margin: 0.5em 0 0;
+    color: #666;
+  }
+  

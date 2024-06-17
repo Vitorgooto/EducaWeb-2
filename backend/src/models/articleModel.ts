@@ -12,3 +12,8 @@ export const getAllArticles = async () => {
   const res = await pool.query('SELECT * FROM articles');
   return res.rows;
 };
+
+export const getQuestionsAndAnswers = async () => {
+  const res = await pool.query('SELECT title AS question, content AS answer FROM articles LIMIT 5');
+  return res.rows;
+};

@@ -15,3 +15,18 @@ export const loginUser = async (req: Request, res: Response) => {
     res.json({ success: false, message: 'Invalid username or password format' });
   }
 };
+
+export const registerUser = async (req: Request, res: Response) => {
+  const { username, password } = req.body;
+  if (validateUsername(username) && validatePassword(password)) {
+    const existingUser = await findUserByUsername(username);
+    if (!existingUser) {
+      const user = await createUser(username, password);
+      res.json({ success: true, user });
+    } else {
+      res.json({ success: false, message: 'Username already exists' });
+    }
+  } else {
+    res.json({ success: false, message: 'Invalid username or password format' });
+  }
+};

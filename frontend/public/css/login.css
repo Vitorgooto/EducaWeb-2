@@ -1,0 +1,40 @@
+#login-register {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2em auto;
+  }
+  
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label, input, button {
+    margin: 0.5em 0;
+  }
+  
+  #toggle-form {
+    background-color: #FFA500;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    text-align: center;
+    color: #666;
+  }
+  
+  p a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
