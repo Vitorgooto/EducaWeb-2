@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Pesquisar Artigos</title>
+</head>
+<body>
+<header>
+    <div class="center-column gap-25 margin-t-10">
+        <h1 class="texto-branco">Pesquisar Artigos</h1>
+    </div>
+</header>
+
+<main class="center-column">
+    <div class="flex-column">
+        <label for="pesquisa-titulo">Pesquisar por Título:</label>
+        <input type="text" id="pesquisa-titulo" class="input-dialog">
+    </div>
+    <div class="flex-column">
+        <label for="filtro-tipo">Filtrar por Tipo:</label>
+        <select id="filtro-tipo" class="input-dialog">
+            <option value="">Todos</option>
+            <option value="noticia">Notícia</option>
+            <option value="release">Release</option>
+            <option value="opiniao">Opinião</option>
+            <option value="entrevista">Entrevista</option>
+            <option value="analise">Análise</option>
+        </select>
+    </div>
+    <button onclick="pesquisarArtigos()" class="texto-branco" id="botao-pesquisar-artigos">Pesquisar</button>
+    
+    <div id="resultado-pesquisa" class="flex-column gap-25 margin-t-10"></div>
+</main>
+
+<footer class="center-all texto-branco">
+    <p>&copy;2024 Portal de Artigos</p>
+</footer>
+<script src="./main.js"></script>
+</body>
+</html>

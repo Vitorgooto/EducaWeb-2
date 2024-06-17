@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./articles.css">
+    <title>Criar Novo Artigo</title>
+</head>
+<body>
+<header>
+    <div class="center-column gap-25 margin-t-10">
+        <h1 class="texto-branco">Criar Novo Artigo</h1>
+    </div>
+</header>
+
+<main class="center-column">
+    <form id="form-artigo" class="width100 flex-column gap-25" onsubmit="criarArtigo(event)">
+        <div class="flex-column">
+            <label for="titulo-artigo">Título:</label>
+            <input type="text" id="titulo-artigo" class="input-dialog" required>
+        </div>
+     
+        <div class="flex-column">
+            <label for="tipo-artigo">Tipo:</label>
+            <select id="tipo-artigo" class="input-dialog" required>
+                <option value="Portugues">Portugues</option>
+                <option value="Matematica">Matematica</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Literatura">Literatura</option>
+                <option value="historia">Hitoria</option>
+            </select>
+        </div>
+        <div class="flex-column">
+            <label for="introducao-artigo">Texto:</label>
+            <textarea id="introducao-artigo" class="input-dialog" required></textarea>
+        </div>
+
+        <div class="flex-column">
+            <label for="data-publicacao-artigo">Data de Publicação:</label>
+            <input type="date" id="data-publicacao-artigo" class="input-dialog" required>
+        </div>
+        <button type="submit" class="texto-branco" id="botao-criar-artigo">Criar Artigo</button>
+    </form>
+</main>
+
+<footer class="center-all texto-branco">
+    <p>&copy;2024 Portal de Artigos</p>
+</footer>
+</body>
+<script src="./articles.js"></script>
+</html>

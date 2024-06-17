@@ -1,0 +1,123 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding-bottom: 50px; /* Adicionado para evitar que o conteúdo fique embaixo do footer */
+}
+
+/* Estilo para o header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Estilo para o título do header */
+h1.texto-branco {
+  margin: 0;
+}
+
+/* Estilo para o main */
+main.center-column {
+  padding: 20px;
+}
+
+/* Estilo para o form */
+form#form-artigo {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os inputs e textareas */
+.input-dialog {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo para os selects */
+.select-dialog {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo para o botão */
+button#botao-criar-artigo,
+button#botao-pesquisar-artigos {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button#botao-criar-artigo:hover,
+button#botao-pesquisar-artigos:hover {
+  background-color: #555;
+}
+
+/* Estilo para o footer */
+footer.center-all {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo para o texto no footer */
+footer.center-all p {
+  margin: 0;
+}
+
+/* Estilo para os resultados da pesquisa */
+#resultado-pesquisa {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cada artigo nos resultados */
+.artigo {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.artigo:last-child {
+  border-bottom: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form#form-artigo,
+  #resultado-pesquisa {
+      padding: 10px;
+  }
+}
